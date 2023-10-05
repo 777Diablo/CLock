@@ -22,7 +22,7 @@ let initialdegforseconds = seconds * 6;
 // console.log(initialdegforhours);
 const date1 = document.querySelector('.date');
 
-date1.innerHTML = (`${day}-${months[month-1]}-${year}`);
+date1.innerHTML = (`${day+1}-${months[month]}-${year}`);
 // Get the element with the class "hourcontainer"
 const hourContainer = document.querySelector('.hourcontainer');
 hourContainer.style.transform = `rotate(${initialdegforhours}deg)`;
