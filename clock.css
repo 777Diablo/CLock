@@ -1,0 +1,102 @@
+body {
+    background-image: url('https://unsplash.com/photos/kDsNr-vu7ms/download?force=true&w=2400tps://unsplash.com/photos/01_igFr7hd4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk2NDE0MzQxfA&force=true&w=2400://unsplash.com/photos/qDG7XKJLKbs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8Y3NzfGVufDB8fHx8MTY5NjQ5NTU4Mnww&force=true&w=2400');
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Center vertically and horizontally */
+    margin: 0;
+    /* Remove default margin to prevent extra space */
+}
+
+.clock {
+    background-color: transparent;
+    background: url('dialface.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    /* Add position relative to contain absolutely positioned elements */
+}
+
+.hourhand {
+    background-color: rgba(255, 228, 196, 0.634);
+    background-color: transparent;
+    background: url('hourhand.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 8.5%;
+    /* Move the hand 50% down from the top */
+    left: 50.4%;
+    /* Move the hand 50% from the left */
+    transform: translate(-50%, 50px);
+    /* Center the hand precisely */
+}
+
+.minutehand {
+    /* background-color: rgba(255, 228, 196, 0.634); */
+    background-color: transparent;
+    background: url('minutehand.png');
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 25.3%;
+    /* Move the hand 50% down from the top */
+    left: 50%;
+    /* Move the hand 50% from the left */
+    transform: translate(-50%, 0);
+    /* Center the hand precisely */
+}
+
+.date {
+    background-color: rgba(91, 242, 252, 0.239);
+    color: aquamarine;
+    text-shadow: 8px 8px 5px black;
+    text-align: center;
+    font-size: 70px;
+    width: 100%;
+    transform: translate(0%, -300px);
+    font-family: 'Brush Script MT', cursive;
+    z-index: 100;
+}
+
+.minutecontainer {
+    /* background-color: rgb(42, 157, 77); */
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.hourcontainer {
+    /* background-color: rgb(42, 157, 77); */
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.secondcontainer {
+    /* background-color: rgb(42, 157, 77); */
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.secondhand {
+    /* background-color: rgba(255, 228, 196, 0.634); */
+    background-color: transparent;
+    background: url('hourhand.png');
+    background-size: cover;
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    top: 35%;
+    /* Move the hand 50% down from the top */
+    left: 46.5%;
+    /* Move the hand 50% from the left */
+    transform: translate(-50%, 0);
+    /* Center the hand precisely */
+}
